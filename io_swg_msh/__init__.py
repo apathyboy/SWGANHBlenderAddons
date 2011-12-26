@@ -1,7 +1,7 @@
 bl_info = {
     "name": "SWG Static Mesh (.msh)",
     "author": "Powerking",
-    "blender": (2, 5, 7),
+    "blender": (2, 6, 1),
     "api": 35622,
     "location": "File > Import-Export",
     "description": "Import-Export Swg Static Mesh Files.",
@@ -20,7 +20,7 @@ if "bpy" in locals():
 
 import bpy
 from bpy.props import BoolProperty, FloatProperty, StringProperty, EnumProperty
-from io_utils import ExportHelper, ImportHelper
+from bpy_extras.io_utils import ExportHelper, ImportHelper
 
 class ImportMSH(bpy.types.Operator, ImportHelper):
     bl_idname = "import_scene.msh"
